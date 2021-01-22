@@ -1,0 +1,30 @@
+.Section {
+    margin: 20px 10px;
+    padding: 10px;
+    border-bottom: 4px solid #40a4c8;
+}
+
+.SectionTitle {
+    display: flex;
+    justify-content: center;
+}
+
+.SectionTitle h2{
+    text-align: center;
+    color: #091f3f;
+}
+
+.SectionTitle img{
+    padding-top: 5px;
+    height: 50px;
+}
+
+.SectionContent{
+    white-space: nowrap;
+    overflow-x: scroll;
+    overflow-y: hidden;
+} 
+
+.SectionContent::-webkit-scrollbar {
+    display: none;
+}

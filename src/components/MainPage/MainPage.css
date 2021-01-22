@@ -1,0 +1,11 @@
+.MainPage img{
+    width: 65%;
+    margin: auto;
+    display: block;
+}
+
+.MainPage{
+    text-align: center;
+    color: #091f3f;
+    margin: 40px 200px;
+}

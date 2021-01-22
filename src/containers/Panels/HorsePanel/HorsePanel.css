@@ -1,0 +1,64 @@
+.HorsePanel {
+    display: flex;
+    justify-content:space-around;
+}
+
+.HorsePanel img {
+    width: 30%;
+    height: 30%;
+    margin-left: 40px;
+}
+
+.Kontuzja{
+    border: 1px solid #40a4c8;
+    border-radius: 5px;
+    padding: 10px;
+}
+
+.PanelTile{
+    box-shadow: 0 4px 8px 0 rgba(53, 144, 230, 0.2);
+    transition: 0.3s;
+    border-radius: 5px;
+    width: 80%;
+    display: inline-block;
+    background-color: blanchedalmond;
+    color: #091f3f;
+    margin: 20px 50px;
+    padding: 5px;
+}
+
+.PanelTileTop{
+    border-bottom: 2px solid #40a4c8;
+}
+
+.PanelTileBottom {
+    margin: 8px;
+}
+
+.PanelTileTop h3 {
+    margin-left: 7px;
+    text-transform: uppercase;
+}
+
+.LessonGroup{
+    display:inline-block;
+    width: 320px;
+}
+
+.LessonGroup button{
+    display:block;
+    margin: auto;
+}
+
+.stdBtn{
+    border-radius: 5px;
+    background-color: #091f3f;
+    padding: 5px 15px;
+    color: #40a4c8;
+}
+
+.stdBtn:hover{
+    border-radius: 5px;
+    background-color: #40a4c8;
+    color: #091f3f;
+}
