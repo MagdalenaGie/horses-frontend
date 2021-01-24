@@ -12,7 +12,9 @@ const initialState = {
     vets: [],
     workers: [],
     instructors: [],
-    farriers: []
+    farriers: [],
+    stabbles: [],
+    lessons: []
 } 
 
 const updateObject = (oldObject, updatedProperties) => {
@@ -74,6 +76,16 @@ const reducer = (state = initialState, action) => {
         case actionTypes.GET_FARRIERS:
             return updateObject(state, {
                 farriers: [...action.farriers]
+            })
+
+        case actionTypes.GET_STABBLES:
+            return updateObject(state, {
+                stabbles: [...action.stabbles]
+            })
+
+        case actionTypes.GET_LESSONS:
+            return updateObject(state, {
+                lessons: [...action.lessons]
             })
 
         case actionTypes.ADD_WORKERS:

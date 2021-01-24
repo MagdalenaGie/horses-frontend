@@ -10,6 +10,9 @@ import LessonDetail from './components/LessonDetail/LessonDetail';
 import MainPage from './components/MainPage/MainPage';
 import HorsePanel from './containers/Panels/HorsePanel/HorsePanel';
 import Logout from './components/Logout/Logout';
+import StaffPanel from './components/AdminTabs/StaffPanel/StaffPanel';
+import ManageLessons from './components/AdminTabs/ManageLessons/ManageLessons';
+import ManageStabbles from './components/AdminTabs/ManageStabbles/ManageStabbles';
 
 
 class App extends Component {
@@ -25,6 +28,9 @@ class App extends Component {
           <Route path="/lessons/:id" component={LessonDetail}/>
           <Route path="/horses/:id" component={HorsePanel}/>
           <Route path="/logout" component={Logout}/>
+          <Route path="/managestaff" component={StaffPanel}/>
+          <Route path="/managelessons" component={ManageLessons}/>
+          <Route path="/managestabbles" component={ManageStabbles}/>
         </Switch>
       </Layout>
     );

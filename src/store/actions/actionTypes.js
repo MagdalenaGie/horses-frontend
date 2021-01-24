@@ -1,6 +1,7 @@
 export const AUTH_SUCCESS = 'AUTH_SUCCESS';
 export const AUTH_FAILED = 'AUTH_FAILED';
 export const LOGOUT = 'LOGOUT';
+
 export const GET_USR_HORSES = 'GET_USR_HORSES';
 export const GET_USR_LESSONS = 'GET_USR_LESSONS';
 export const GET_LESSON_DETAILS = 'GET_LESSON_DETAILS';
@@ -8,14 +9,22 @@ export const GET_INSTRUCTORS = 'GET_INSTRUCTORS';
 export const GET_WORKERS = 'GET_WORKERS';
 export const GET_VETS = 'GET_VETS';
 export const GET_FARRIERS = 'GET_FARRIERS';
+export const GET_LESSONS = 'GET_LESSONS';
+export const GET_STABBLES = 'GET_STABBLES';
+export const GET_HORSE_INFO = 'GET_HORSE_INFO';
+export const GET_HORSE_INJURIES = 'GET_HORSE_INJURIES';
+export const GET_HORSE_LESSONS = 'GET_HORSE_LESSONS';
+
 export const ADD_INSTRUCTORS = 'ADD_INSTRUCTORS';
 export const ADD_WORKERS = 'ADD_WORKERS';
 export const ADD_VETS = 'ADD_VETS';
 export const ADD_FARRIERS = 'ADD_FARRIERS';
 export const ADD_PARTICIPANT = 'ADD_PARTICIPANT';
-export const GET_HORSE_INFO = 'GET_HORSE_INFO';
-export const GET_HORSE_INJURIES = 'GET_HORSE_INJURIES';
-export const GET_HORSE_LESSONS = 'GET_HORSE_LESSONS';
+
+export const EDIT_LESSON = 'EDIT_LESSON';
+export const EDIT_STABBLE = 'EDIT_STABBLE';
+
 export const DELETE_INJURY = 'DELETE_INJURY';
 export const DELETE_HORSE = 'DELETE_HORSE';
 export const DELETE_PAIR = 'DELETE_PAIR';
+export const DELETE_LESSON = 'DELETE_LESSON';

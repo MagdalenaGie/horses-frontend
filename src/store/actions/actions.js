@@ -186,6 +186,76 @@ export const getFarriers = (farriers) => {
     }
 }
 
+export const fetchLessons = () => {
+    return dispatch => {
+        const route = '/lekcje';
+        axios.get(route)
+        .then(res => {
+            const fetchedData = res.data;
+            dispatch(getLessons(fetchedData));
+        })
+        .catch(err => {
+            console.log(err);
+        })
+    }
+}
+
+export const getLessons = (lessons) => {
+    return{
+        type: actionTypes.GET_LESSONS,
+        lessons: lessons
+    }
+}
+
+export const fetchStabbles = () => {
+    return dispatch => {
+        const route = '/stajnie';
+        axios.get(route)
+        .then(res => {
+            const fetchedData = res.data;
+            dispatch(getStabbles(fetchedData));
+        })
+        .catch(err => {
+            console.log(err);
+        })
+    }
+}
+
+export const getStabbles = (stabbles) => {
+    return{
+        type: actionTypes.GET_STABBLES,
+        stabbles: stabbles
+    }
+}
+
+
+// //PUT
+// export const changeStabbleWorker = (update) => {
+//     return dispatch => {
+//         axios.put('/lekcje/' + update.id_lekcja, update)
+//         .then(response => {
+//             if(response.data.results){
+//                 alert("Lekcja została zaktualizowana!");
+//             }else{
+//                 alert("Niestety, coś poszło nie tak - prawdopodobnie w wybranym terminie już odbywają się jakieś zajęcia")
+//             }
+            
+//         })
+//         .catch(error => {
+//             alert("Niestety, nie udało się zaktualizować lekcji! Sprawdź poprawność danych lub spróbuj ponownie później")
+//             console.log(error);
+//         })
+//     }
+// }
+
+// export const updateStabble = (resp) => {
+//     return{
+//         type: actionTypes.EDIT_STABBLE,
+//         update: resp
+//     }
+// }
+
+
 ///POST
 export const postWorker = (workerData) => {
     return dispatch => {
