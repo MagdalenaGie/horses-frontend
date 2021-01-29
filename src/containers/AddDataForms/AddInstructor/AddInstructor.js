@@ -38,8 +38,8 @@ class AddInstructor extends Component {
             <InputFrame>
                 <form onSubmit={this.onSubmitHandler}>
                     <h3>Dodaj instruktora:</h3>
-                    <input type="text" name="name" onChange={this.onChangeName}/><br/>Imię<br/><br/>
-                    <input type="text" name="surname" onChange={this.onChangeSurname}/><br/>Nazwisko<br/><br/>
+                    <input type="text" name="name" onChange={this.onChangeName} required/><br/>Imię<br/><br/>
+                    <input type="text" name="surname" onChange={this.onChangeSurname} required/><br/>Nazwisko<br/><br/>
                     <input type="submit" value="Wyślij"/>
                 </form>
             </InputFrame>

@@ -49,20 +49,6 @@ class DeleteLesson extends Component {
     render(){
         let selectLesson = <Spinner/>;
         let optLessons = [];
-        // if(this.state.lessons.length > 0){
-        //     optLessons = this.state.lessons.map( les => (
-        //         <option key ={les.id_lekcja} value={les.id_lekcja}>{les.dzien + ' ' + les.godzina + ' ' + les.ins_imie + ' ' + les.ins_nazw}</option>
-        //     ));
-        //     selectLesson = (
-        //         <div>
-        //             Wybierz zajęcia, które chcesz odwołać:<br/>
-        //             <select id="lekcjaId" name="lekcja" onChange={this.onChangeLekcja} defaultValue="default" required> 
-        //                 {optLessons}
-        //                 <option value="default" key="aaa123inst" disabled hidden> Wybierz lekcję </option>
-        //             </select><br/><br/>
-        //         </div>
-        //     );
-        // }
 
         optLessons = this.props.lessons.map( les => (
             <option key ={les.id_lekcja} value={les.id_lekcja}>{les.dzien + ' ' + les.godzina + ' ' + les.ins_imie + ' ' + les.ins_nazw}</option>

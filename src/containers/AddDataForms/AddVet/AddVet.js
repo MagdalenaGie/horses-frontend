@@ -56,7 +56,7 @@ class AddVet extends Component {
                     <h3>Dodaj weterynarza:</h3>
                     <input type="text" name="name" onChange={this.onChangeName}/><br/>Imię<br/><br/>
                     <input type="text" name="surname" onChange={this.onChangeSurname}/><br/>Nazwisko<br/><br/>
-                    <input type="text" name="price" onChange={this.onChangePrice}/><br/>Cena wizyty: <br/><br/>
+                    <input type="number" name="price" onChange={this.onChangePrice}min="0" max="500"/><br/>Cena wizyty: <br/><br/>
                     <input type="text" name="weeks" onChange={this.onChangePhone}/><br/>Telefon kontaktowy: <br/><br/>
                     <input type="submit" value="Wyślij"/>
                 </form>

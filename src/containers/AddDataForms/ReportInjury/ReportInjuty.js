@@ -107,17 +107,17 @@ class ReportInjury extends Component {
             select = (
                 <div>
                     Wybierz konia, który doznał kontuzji:<br/>
-                    <select id="konid" name="kon" onChange={this.onChangeKon} defaultValue="default">
+                    <select id="konid" name="kon" onChange={this.onChangeKon} defaultValue="default" required>
                         {optHor}
                         <option value="default" key="aaa123kon" disabled hidden> Wybierz konia </option>
                     </select><br/><br/>
                     Wybierz weterynarza, który będzie prowadził leczenie twojego konia:<br/>
-                    <select id="wetid" name="weterynarz" onChange={this.onChangeVet} defaultValue="default">
+                    <select id="wetid" name="weterynarz" onChange={this.onChangeVet} defaultValue="default" required>
                         {optVets}
                         <option value="default" key="aaa123wet" disabled hidden> Wybierz weterynarza </option>
                     </select><br/><br/>
                     Wybierz rodzaj kontuzji:<br/>
-                    <select id="kontuzjaid" name="kontuzja" onChange={this.onChangeInjury} defaultValue="default">
+                    <select id="kontuzjaid" name="kontuzja" onChange={this.onChangeInjury} defaultValue="default" required>
                         {optInj}
                         <option value="default" key="aaa123kontuzja" disabled hidden> Wybierz typ kontuzji </option>
                     </select><br/>
@@ -132,7 +132,7 @@ class ReportInjury extends Component {
             <InputFrame>
                 <form onSubmit={this.onSubmitHandler}>
                     <h3>Zgłoś kontuzję konia:</h3>
-                    <input type="date" min="2020-01-01" max={today} name="dataur" onChange={this.onChangeData}/><br/>Data kotuzji<br/><br/>
+                    <input type="date" min="2020-01-01" max={today} name="dataur" onChange={this.onChangeData} required/><br/>Data kotuzji<br/><br/>
                     {select}<br/>
                     <input type="submit" value="Wyślij"/>
                 </form>

@@ -98,7 +98,7 @@ class ChangeLesson extends Component {
                     <h3>Zmień termin zajęć:</h3>
                     {selectLesson}<br/>
                     {selectDay}<br/>
-                    <input type="time" name="godzina" onChange={this.onChangeTime}  step="3600" min="8:00" max="19:00" required/><br/>Godnina rozpoczęcia lekcji<br/><br/>
+                    <input type="time" name="godzina" onChange={this.onChangeTime}  step="3600" min="8:00" max="19:00" required/><br/>Godzina rozpoczęcia lekcji<br/><br/>
                     <input type="submit" value="Wyślij"/>
                 </form>
             </InputFrame>

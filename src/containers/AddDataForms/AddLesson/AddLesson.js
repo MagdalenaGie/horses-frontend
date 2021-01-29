@@ -123,8 +123,8 @@ class AddLesson extends Component {
                     {select}<br/>
                     {selectDay}<br/>
                     {selectType}<br/>
-                    <input type="number" name="cena" onChange={this.onChangeCena} required/><br/>Cena<br/><br/>
-                    <input type="time" name="godzina" onChange={this.onChangeTime}  step="3600" min="8:00" max="19:00" required/><br/>Godnina rozpoczęcia lekcji<br/><br/>
+                    <input type="number" name="cena" min="0" max="200" onChange={this.onChangeCena} required/><br/>Cena<br/><br/>
+                    <input type="time" name="godzina" onChange={this.onChangeTime}  step="3600" min="8:00" max="19:00" required/><br/>Godzina rozpoczęcia lekcji<br/><br/>
                     <input type="submit" value="Wyślij"/>
                 </form>
             </InputFrame>

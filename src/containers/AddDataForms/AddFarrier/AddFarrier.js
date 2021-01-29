@@ -56,8 +56,8 @@ class AddFarrier extends Component {
                     <h3>Dodaj kowala:</h3>
                     <input type="text" name="name" onChange={this.onChangeName} required/><br/>Imię<br/><br/>
                     <input type="text" name="surname" onChange={this.onChangeSurname} required/><br/>Nazwisko<br/><br/>
-                    <input type="text" name="price" onChange={this.onChangePrice} required/><br/>Cena usługi: <br/><br/>
-                    <input type="text" name="weeks" onChange={this.onChangeWeeks} required/><br/>Częstotliwość wizyt (w tygodniach): <br/><br/>
+                    <input type="number" name="price" onChange={this.onChangePrice} min="0" max="500" required/><br/>Cena usługi: <br/><br/>
+                    <input type="number" name="weeks" onChange={this.onChangeWeeks} min="1" max="7" required/><br/>Częstotliwość wizyt (w tygodniach): <br/><br/>
                     <input type="submit" value="Wyślij"/>
                 </form>
             </InputFrame>
